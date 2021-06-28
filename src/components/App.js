@@ -77,20 +77,7 @@ class App extends React.Component {
         <div className="results">
           <div className="graph-title">{attr ? attr : 'component'} vs time</div>
           <div className="bar-graph">
-            <Bar
-              data={data}
-              options={{
-                title: {
-                  display: true,
-                  text: 'Average Rainfall per month',
-                  fontSize: 20,
-                },
-                legend: {
-                  display: true,
-                  position: 'right',
-                },
-              }}
-            />
+            <Bar data={data} />
           </div>
         </div>
       </div>
