@@ -71,6 +71,7 @@ class Weather extends Component {
   handleInputChange = async (field, value) => {
     const url = `http://127.0.0.1:8000/get-weather-data/${value}`;
     const response = await fetch(url);
+    console.log(response.status);
     if (response.status === 200) {
       const data = await response.json();
       this.setState({
@@ -82,6 +83,7 @@ class Weather extends Component {
         [field]: value,
         data: undefined,
       });
+      window.alert("Choose some other date");
     }
   };
 
