@@ -64,7 +64,7 @@ class Air extends Component {
       window.alert('Choose a date');
       return;
     }
-    const url = `http://127.0.0.1:800${location + 1}/get-ems${
+    const url = `http://localhost:800${location + 1}/get-ems${
       location + 1
     }-data/${date}`;
     console.log(url);
