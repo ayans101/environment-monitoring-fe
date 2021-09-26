@@ -69,7 +69,7 @@ class Weather extends Component {
   }
 
   handleInputChange = async (field, value) => {
-    const url = `http://localhost:8000/get-weather-data/${value}`;
+    const url = `http://13.235.91.98:8000/get-weather-data/${value}`;
     const response = await fetch(url);
     console.log(response.status);
     if (response.status === 200) {
