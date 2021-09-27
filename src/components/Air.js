@@ -64,7 +64,7 @@ class Air extends Component {
       window.alert('Choose a date');
       return;
     }
-    const url = `http://13.235.91.98:800${location + 1}/get-ems${
+    const url = `http://13.232.132.83:800${location + 1}/get-ems${
       location + 1
     }-data/${date}`;
     console.log(url);
